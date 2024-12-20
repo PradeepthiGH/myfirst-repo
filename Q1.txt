@@ -1,0 +1,19 @@
+Please carefully read the Process Use Case and Process Business Rules / Conditions. Please develop a bot using Automation Anywhere to automate the Process and Business Rules outlined below and submit the files.
+
+Process Use Case:
+
+Open the website http://www.marketwatch.com/tools/stockresearch/globalmarkets/intIndices.asp
+This website page consists of a data table with International Indices and daily updates on fixed set of indices data
+On daily basis, extract the data table from web page and store / update data  in excel
+Business Rules / Conditions:
+
+“DD-MMM-YYYY” means date of bot execution. In this case this will be daily
+Bot should be scheduled to run daily at 9:00 pm IST
+Output file should be saved in the folder “Market_Watch”
+Bot should access this web page, create the output file for the first time and then must compare web page data with previous day data in excel and update changes in data into new excel workbook on daily basis (every day of the year).
+Daily output file should be saved as excel workbook in the format as “DD-MMM-YYYY_MarketWatch_Indices_data.xlsx” to reflect current date of bot execution.
+If there is no update in data on the web page compared to previous day data, then the filename for latest bot execution should be saved as “DD-MMM-YYYY_MarketWatch_Indices_data_NoChange.xlsx”
+Data of different International Indices should be stored / updated in individual sheets (named by individual indices) within the same excel workbook mentioned above
+If a new record is available on the web page, new record should be inserted in the corresponding excel sheet of the workbook
+If a record / row is deleted on the web page, the existing record should be deleted in the corresponding excel sheet of the workbook
+ 
