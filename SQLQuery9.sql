@@ -1,4 +1,4 @@
-CREATE TABLE employees (
+CREATE TABLE list of employees (
 	employee_id int PRIMARY KEY,
 	first_name CHARACTER VARYING (20),
 	last_name CHARACTER VARYING (25) NOT NULL,
